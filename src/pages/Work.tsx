@@ -2,18 +2,10 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { siteContent } from "@/data/content";
 
-const Index = () => {
+const Work = () => {
   return (
     <Layout>
-      {/* Sticky Hero */}
-      <div className="sticky-hero h-[90vh] bg-cinza flex items-center justify-center">
-        <p className="text-muted-foreground text-lg">
-          {siteContent.home.heroPlaceholder}
-        </p>
-      </div>
-
-      {/* Projects Grid - scrolls over hero */}
-      <section className="content-over-hero bg-background px-4 md:px-8 py-4">
+      <section className="px-4 md:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {siteContent.projects.map((project) => (
             <Link
@@ -34,4 +26,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Work;
